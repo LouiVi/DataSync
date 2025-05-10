@@ -1,3 +1,4 @@
+cfg.Portrait, cfg.Light, cfg.MUI;
 
 //Load external scripts.
 app.Script( "Home.js" );
@@ -13,9 +14,6 @@ var curPage = null;
 //Called when application is started.
 function OnStart()
 {    
-    //Lock screen orientation to Portrait.
-    app.SetOrientation( "Portrait" );
-    
     //Create and set a 'material style' theme.
     CreateTheme();
     
@@ -396,5 +394,4 @@ function ShowFiles()
     }
     lstMenuFiles.SetList( list );
 }
-
 
