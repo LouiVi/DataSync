@@ -52,14 +52,13 @@ function Home( path, layContent )
     		if(c) {
     		app.DownloadFile( survey, app.GetAppPath()+"/survey.sqlite.txt", "Downloading","Survey Database" );
     		app.SaveText( "ver", v, "ver" );
-    		app.DeleteFile( "version.txt" );
     		setTimeout(()=>{
     		db = app.OpenDatabase(  app.GetAppPath()+"/survey.sqlite.txt" );
     		db.ExecuteSql("SELECT * FROM Questionnaires",[], self.OnResult);
-    		}, 2500);
+    		}, 3500);
     		 }
     	}
-    	}, 2400);
+    	}, 3400);
     	
     }
     
